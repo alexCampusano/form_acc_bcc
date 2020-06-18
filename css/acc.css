@@ -1,0 +1,23 @@
+:root{
+    --rojo:#872930;
+    --azul:#182d4f;
+    --blanco:#FFFFFF;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700&display=swap');
+body{
+    padding-top:130px;
+    font-family: 'Open sans';
+}
+.controles{
+    background-color: var(--rojo);
+    min-height: 30px;
+    line-height: 30px;
+    color:var(--blanco);
+}
+.navbar{
+    height: 130px;
+    background-color: var(--azul);
+}
+.navbar-brand img{
+    max-height: 83px;
+}
