@@ -8,38 +8,220 @@
         <link rel="stylesheet" href="css/acc.css">
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="row controles ">
-                <div class="container">
-                    hola
-                </div>
-            </div>
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button> -->
-                    <a class="navbar-brand" href="#">
-                        <img src="img/layout_set_logo.png" alt="Logo Banco Central de Chile">
-                    </a>
-                </div>
-                <!-- <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-
-                </div> -->
-            </div>
-        </nav>
-
         <section class="container">
+            <div class="titulo my-5">
+                <h1>Elementos de formulario</h1>
+            </div>
+            <div class="formulario">
+                <form class="needs-validation" novalidate="">
+                    <h3 class="mb-3">Elementos en ancho total</h3>
+                    <!-- tipo texto -->
+                    <div class="mb-3">
+                        <label for="tipoTexto">Campo tipo Texto</label>
+                        <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                        <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                    </div>
+                    <!-- tipo mail -->
+                    <div class="mb-3">
+                        <label for="tipoEmail">Campo tipo eMail</label>
+                        <input type="email" class="form-control" name="tipoEmail" id="tipoEmail" placeholder="Este es un elemento tipo email">
+                        <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                    </div>
+                    <!-- tipo numérico -->
+                    <div class="mb-3">
+                        <label for="tipoNumero">Campo tipo numérico</label>
+                        <input type="number" class="form-control" name="tipoNumero" id="tipoNumero" placeholder="Este es un elemento tipo numérico">
+                        <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                    </div>
+                    <!-- tipo password -->
+                    <div class="mb-3">
+                        <label for="tipoPassword">Campo tipo contraseña</label>
+                        <input type="password" class="form-control" name="tipoPassword" id="tipoPassword" placeholder="Este es un elemento tipo contraseña">
+                        <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                    </div>
+                    <!-- tipo select -->
+                    <div class="mb-3">
+                        <label for="tipoSelect">Campo tipo Select</label>
+                        <select class="custom-select d-block w-100" id="tipoSelect" required="">
+                            <option value="">Seleccione...</option>
+                            <option>Texto opción uno</option>
+                            <option>Texto opción dos</option>
+                            <option>Texto opción tres</option>
+                            <option>Texto opción cuatro</option>
+                            <option>Texto opción cinco</option>
+                            <option>Texto opción seis</option>
+                            <option>Texto opción siete</option>
+                        </select>
+                        <div class="invalid-feedback">Seleccione una opción válida.</div>
+                    </div>
+                    <!-- tipo select por grupo-->
+                    <div class="mb-3">
+                        <label for="tipoSelectGrupo">Campo tipo Select por grupos</label>
+                        <select class="custom-select d-block w-100" id="tipoSelectGrupo" required="">
+                            <option value="">Seleccione...</option>
+                            <optgroup label="Primer grupo">
+                                <option>Texto opción uno</option>
+                                <option>Texto opción dos</option>
+                            </optgroup>
+                            <optgroup label="Segundo grupo">
+                                <option>Texto opción tres</option>
+                                <option>Texto opción cuatro</option>
+                            </optgroup>
+                            <optgroup label="Tercer grupo">
+                                <option>Texto opción cinco</option>
+                                <option>Texto opción seis</option>
+                                <option>Texto opción siete</option>
+                            </optgroup>
+                        </select>
+                        <div class="invalid-feedback">Seleccione una opción válida.</div>
+                    </div>
+                    <!-- tipo select multiple -->
+                    <div class="mb-3">
+                        <label for="tipoSelect">Campo tipo Select Multiple</label>
+                        <select class="custom-select d-block w-100" id="tipoSelect" required="" multiple="multiple">
+                            <option value="">Seleccione...</option>
+                            <option>Texto opción uno</option>
+                            <option>Texto opción dos</option>
+                            <option>Texto opción tres</option>
+                            <option>Texto opción cuatro</option>
+                            <option>Texto opción cinco</option>
+                            <option>Texto opción seis</option>
+                            <option>Texto opción siete</option>
+                        </select>
+                        <div class="invalid-feedback">Seleccione una opción válida.</div>
+                    </div>
+                    <!-- tipo textarea -->
+                    <div class="mb-3">
+                        <label for="tipoTextArea">Campo tipo Textarea</label>
+                        <textarea type="text" class="form-control" name="tipoTextArea" id="tipoTextArea" placeholder="Este es un elemento tipo textarea"></textarea>
+                        <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                    </div>
+                    <!-- tipo Checkbox -->
+                    <fieldset>
+                        <legend>Los grupos de checkbox siempre deben ir en fieldset</legend>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="inputCheck1">
+                            <label class="custom-control-label" for="inputCheck1">Tipo checkbox número uno</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="inputCheck2">
+                            <label class="custom-control-label" for="inputCheck2">Tipo checkbox número dos</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="inputCheck3">
+                            <label class="custom-control-label" for="inputCheck3">Tipo checkbox número tres</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="inputCheck4">
+                            <label class="custom-control-label" for="inputCheck4">Tipo checkbox número cuatro</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="inputCheck5">
+                            <label class="custom-control-label" for="inputCheck5">Tipo checkbox número cinco</label>
+                        </div>
+                    </fieldset>
 
-            <h1>cualquier color</h1>
+                    <hr class="mb-3">
+                    
+                    <fieldset>
+                        <legend>Grupo de radio selección</legend>
+                        <p class="text-muted"><em>Siempre se debe haber una opción seleccionada por defecto</em></p>
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="radio1" name="radioButtons" type="radio" class="custom-control-input" checked="" required="">
+                                <label class="custom-control-label" for="radio1">Opción de radio button uno</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="radio2" name="radioButtons" type="radio" class="custom-control-input" required="">
+                                <label class="custom-control-label" for="radio2">Opción de radio button dos</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="radio3" name="radioButtons" type="radio" class="custom-control-input" required="">
+                                <label class="custom-control-label" for="radio3">Opción de radio button tres</label>
+                            </div>
+                        </div>
+                        <div class="invalid-feedback">Por favor ingrese datos válidos.</div>  
+                    </fieldset>
+                    
+
+                    <hr class="mb-4">
+                    
+                    <h3 class="mb-3">Dos columnas</h3>
+                    <div class="row">
+                        <!-- tipo texto -->
+                        <div class="mb-3 col-md-6 ">
+                            <label for="tipoTexto">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                        </div>
+                        <!-- tipo texto -->
+                        <div class="mb-3 col-md-6 ">
+                            <label for="tipoTexto">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                        </div>
+                    </div>
+
+                    <hr class="mb-4">
+
+                    <h3 class="mb-3">Tres columnas</h3>
+                    <div class="row">
+                        <!-- tipo texto -->
+                        <div class="mb-3 col-md-4 ">
+                            <label for="tipoTexto">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                        </div>
+                        <!-- tipo texto -->
+                        <div class="mb-3 col-md-4 ">
+                            <label for="tipoTexto">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                        </div>
+                        <!-- tipo texto -->
+                        <div class="mb-3 col-md-4 ">
+                            <label for="tipoTexto">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                        </div>
+                    </div>
+
+                    <hr class="mb-4">
+
+                    <h3 class="mb-3">Cuatro columnas</h3>
+                    <div class="row">
+                        <!-- tipo texto -->
+                        <div class="mb-3 col-md-3 ">
+                            <label for="tipoTexto">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                        </div>
+                        <!-- tipo texto -->
+                        <div class="mb-3 col-md-3 ">
+                            <label for="tipoTexto">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                        </div>
+                        <!-- tipo texto -->
+                        <div class="mb-3 col-md-3 ">
+                            <label for="tipoTexto">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                        </div>
+                        <!-- tipo texto -->
+                        <div class="mb-3 col-md-3 ">
+                            <label for="tipoTexto">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                        </div>
+                    </div>
+
+                    <hr class="mb-5 mt-5">
+
+                    <button class="btn btn-primary btn-lg" type="submit">Botón Enviar</button>
+                    <button type="reset" class="btn btn-link text-muted">Borrar el formulario</button>
+                  </form>
+            </div>
 
         </section>
 
@@ -47,5 +229,27 @@
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+        'use strict'
+
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+                if (form.checkValidity() === false) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+            })
+        }, false)
+        }())
+    </script>
     </body>
 </html>
