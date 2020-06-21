@@ -8,13 +8,34 @@
         <link rel="stylesheet" href="css/acc.css">
     </head>
     <body>
-        <section class="container">
-            <div class="titulo my-5">
-                <h1>Elementos de formulario</h1>
+        <!-- titulo de la pagina -->
+        <section class="titulo-pagina row mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Página</li>
+                            </ol>
+                        </nav>
+                        <h1 class="main-title">Formulario universal</h1>
+                    </div>
+                    <div class="col-md-3 navilateral">
+                        <ul>
+                            <li><a href="#">link 1</a></li>
+                            <li><a href="#">link 1</a></li>
+                            <li><a href="#">link 1</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </section>
+        <!-- formulario -->
+        <section class="container">
             <div class="formulario">
                 <form class="needs-validation" novalidate="">
-                    <h3 class="mb-3">Elementos en ancho total</h3>
+                    <h2 class="mb-3">Elementos en ancho total</h2>
                     <!-- tipo texto -->
                     <div class="mb-3">
                         <label for="tipoTexto">Campo tipo Texto</label>
@@ -77,8 +98,8 @@
                     </div>
                     <!-- tipo select multiple -->
                     <div class="mb-3">
-                        <label for="tipoSelect">Campo tipo Select Multiple</label>
-                        <select class="custom-select d-block w-100" id="tipoSelect" required="" multiple="multiple">
+                        <label for="tipoSelectMulti">Campo tipo Select Multiple</label>
+                        <select class="custom-select d-block w-100" id="tipoSelectMulti" required="" multiple="multiple">
                             <option value="">Seleccione...</option>
                             <option>Texto opción uno</option>
                             <option>Texto opción dos</option>
@@ -93,7 +114,7 @@
                     <!-- tipo textarea -->
                     <div class="mb-3">
                         <label for="tipoTextArea">Campo tipo Textarea</label>
-                        <textarea type="text" class="form-control" name="tipoTextArea" id="tipoTextArea" placeholder="Este es un elemento tipo textarea"></textarea>
+                        <textarea class="form-control" name="tipoTextArea" id="tipoTextArea" placeholder="Este es un elemento tipo textarea"></textarea>
                         <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                     </div>
                     <!-- tipo Checkbox -->
@@ -125,7 +146,7 @@
                     
                     <fieldset>
                         <legend>Grupo de radio selección</legend>
-                        <p class="text-muted"><em>Siempre se debe haber una opción seleccionada por defecto</em></p>
+                        <p class="text-muted"></em>Siempre se debe haber una opción seleccionada por defecto</p>
                         <div class="d-block my-3">
                             <div class="custom-control custom-radio">
                                 <input id="radio1" name="radioButtons" type="radio" class="custom-control-input" checked="" required="">
@@ -146,72 +167,72 @@
 
                     <hr class="mb-4">
                     
-                    <h3 class="mb-3">Dos columnas</h3>
+                    <h2 class="mb-3">Dos columnas</h2>
                     <div class="row">
                         <!-- tipo texto -->
                         <div class="mb-3 col-md-6 ">
-                            <label for="tipoTexto">Campo tipo Texto</label>
-                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <label for="tipoTexto_2col1">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto_2col1" id="tipoTexto_2col1" placeholder="Este es un elemento tipo texto">
                             <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                         </div>
                         <!-- tipo texto -->
                         <div class="mb-3 col-md-6 ">
-                            <label for="tipoTexto">Campo tipo Texto</label>
-                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <label for="tipoTexto_2col2">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto_2col2" id="tipoTexto_2col2" placeholder="Este es un elemento tipo texto">
                             <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                         </div>
                     </div>
 
                     <hr class="mb-4">
 
-                    <h3 class="mb-3">Tres columnas</h3>
+                    <h2 class="mb-3">Tres columnas</h2>
                     <div class="row">
                         <!-- tipo texto -->
                         <div class="mb-3 col-md-4 ">
-                            <label for="tipoTexto">Campo tipo Texto</label>
-                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <label for="tipoTexto_3col1">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto_3col1" id="tipoTexto_3col1" placeholder="Este es un elemento tipo texto">
                             <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                         </div>
                         <!-- tipo texto -->
                         <div class="mb-3 col-md-4 ">
-                            <label for="tipoTexto">Campo tipo Texto</label>
-                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <label for="tipoTexto_3col2">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto_3col2" id="tipoTexto_3col2" placeholder="Este es un elemento tipo texto">
                             <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                         </div>
                         <!-- tipo texto -->
                         <div class="mb-3 col-md-4 ">
-                            <label for="tipoTexto">Campo tipo Texto</label>
-                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <label for="tipoTexto_3col3">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto_3col3" id="tipoTexto_3col3" placeholder="Este es un elemento tipo texto">
                             <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                         </div>
-                    </div>
+                    </div> 
 
                     <hr class="mb-4">
 
-                    <h3 class="mb-3">Cuatro columnas</h3>
+                    <h2 class="mb-3">Cuatro columnas</h2>
                     <div class="row">
                         <!-- tipo texto -->
                         <div class="mb-3 col-md-3 ">
-                            <label for="tipoTexto">Campo tipo Texto</label>
-                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <label for="tipoTexto_4col1">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto_4col1" id="tipoTexto_4col1" placeholder="Este es un elemento tipo texto">
                             <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                         </div>
                         <!-- tipo texto -->
                         <div class="mb-3 col-md-3 ">
-                            <label for="tipoTexto">Campo tipo Texto</label>
-                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <label for="tipoTexto_4col2">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto_4col2" id="tipoTexto_4col2" placeholder="Este es un elemento tipo texto">
                             <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                         </div>
                         <!-- tipo texto -->
                         <div class="mb-3 col-md-3 ">
-                            <label for="tipoTexto">Campo tipo Texto</label>
-                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <label for="tipoTexto_4col3">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto_4col3" id="tipoTexto_4col3" placeholder="Este es un elemento tipo texto">
                             <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                         </div>
                         <!-- tipo texto -->
                         <div class="mb-3 col-md-3 ">
-                            <label for="tipoTexto">Campo tipo Texto</label>
-                            <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
+                            <label for="tipoTexto_4col4">Campo tipo Texto</label>
+                            <input type="text" class="form-control" name="tipoTexto_4col4" id="tipoTexto_4col4" placeholder="Este es un elemento tipo texto">
                             <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                         </div>
                     </div>
