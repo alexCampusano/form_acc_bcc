@@ -17,9 +17,34 @@ textarea.form-control{
     font-size: 16px;
     font-weight: 700;
 }
+textarea{
+    min-height: 100px;
+}
 ::placeholder{
     color:#B3B5BB !important;
     font-weight: normal;
+}
+.header-access {
+    background-color: #872930;
+    color:#FFFFFF;
+    padding:2px 0px;
+}
+.header-access a{
+    color:#FFFFFF;
+}
+.btn.btn-minibox {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #872930;
+    padding: 0 3px;
+}
+.header-main {
+    background-color: #182d4f;
+    min-height: 100px;
+}
+.logo_top{
+    max-width: 83px;
+    
 }
 .titulo-pagina{
     background: #FFFFFF;
