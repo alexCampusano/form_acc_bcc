@@ -12,7 +12,7 @@
             <div class="header-access">
                 <div class="container">
                     <div class="text-right">
-                        <a href="#0" class="btn btn-minibox accebility-bar-aumentarFont">
+                        <a href="#" class="btn btn-minibox accebility-bar-aumentarFont">
                             <div class="sr-only">Tamaño de letra más grande</div>
                             <svg class="bi bi-plus" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
@@ -20,13 +20,13 @@
                             </svg>
                         </a>
                         <span class="basic-text px-2 c-white">A</span>
-                        <a href="#0" class="btn btn-minibox accebility-bar-disminuirFont">
+                        <a href="#" class="btn btn-minibox accebility-bar-disminuirFont">
                             <div class="sr-only">Tamaño de letra más pequeño</div>
                             <svg class="bi bi-dash" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5z"/>
                             </svg>
                         </a>
-                        <a href="#0" class="clean-link line-height-0 mx-2 accebility-bar-contraste">
+                        <a href="#" class="clean-link line-height-0 mx-2 accebility-bar-contraste">
                             <div class="sr-only">Aumentar el contraste</div>
                             <svg class="bi bi-circle-half" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 15V1a7 7 0 1 1 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
@@ -46,7 +46,7 @@
             </div>
         </header>
         <!-- titulo de la pagina -->
-        <section class="titulo-pagina row mb-5">
+        <section class="titulo-pagina mb-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
@@ -180,7 +180,7 @@
                     </fieldset>
 
                     <hr class="mb-3">
-                    
+
                     <fieldset>
                         <legend>Grupo de radio selección</legend>
                         <p class="text-muted"></em>Siempre se debe haber una opción seleccionada por defecto</p>
@@ -198,12 +198,12 @@
                                 <label class="custom-control-label" for="radio3">Opción de radio button tres</label>
                             </div>
                         </div>
-                        <div class="invalid-feedback">Por favor ingrese datos válidos.</div>  
+                        <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                     </fieldset>
-                    
+
 
                     <hr class="mb-4">
-                    
+
                     <h2 class="mb-3">Dos columnas</h2>
                     <div class="row">
                         <!-- tipo texto -->
@@ -242,7 +242,7 @@
                             <input type="text" class="form-control" name="tipoTexto_3col3" id="tipoTexto_3col3" placeholder="Este es un elemento tipo texto">
                             <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                         </div>
-                    </div> 
+                    </div>
 
                     <hr class="mb-4">
 
@@ -287,27 +287,15 @@
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="js/fields_validation.js" charset="utf-8"></script>
+    <script src="js/fonts_change.js" charset="utf-8"></script>
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-        'use strict'
-
-        window.addEventListener('load', function () {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName('needs-validation')
-
-            // Loop over them and prevent submission
-            Array.prototype.filter.call(forms, function (form) {
-            form.addEventListener('submit', function (event) {
-                if (form.checkValidity() === false) {
-                event.preventDefault()
-                event.stopPropagation()
-                }
-                form.classList.add('was-validated')
-            }, false)
-            })
-        }, false)
-        }())
+        $('.accebility-bar-contraste').click(function (){
+            $('link[href="css/acc.css"]').attr('href','css/contraste.css');
+        });
+        $('#original').click(function (){
+            $('link[href="style2.css"]').attr('href','style1.css');
+        });
     </script>
     </body>
 </html>

@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+/* inputs */
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password],
+.custom-select,
+textarea.form-control{
+    background-color: yellow;
+    border-color:yellow;
+    border-width:2px;
+    color:black;
+    font-size: 16px;
+    font-weight: 700;   
+}
+.form-control:focus,
+.custom-select:focus,
+.custom-control-input:focus{
+    outline-style: dashed;
+    outline-color: yellow;
+    outline-width: 2px;
+    outline-offset: 3px;
+}
+a{
+    text-decoration: underline;
+}
+textarea{
+    min-height: 100px;
+}
+.btn-primary{
+    background-color: yellow;
+    color:black;
+}
+button[type=reset]{
+    color:yellow;
+}
+::placeholder{
+    color:black !important;
+    font-weight: normal;
+}
+.header-access {
+    background-color: black;
+    padding:2px 0px;
+}
+
+.btn.btn-minibox {
+    background-color: black;
+    border-radius: 4px;
+    padding: 0 3px;
+}
+.header-main {
+    background-color: black;
+    min-height: 100px;
+}
+.logo_top{
+    max-width: 83px;
+    
+}
+.titulo-pagina{
+    background: black;
+    min-height: 11.25rem;
+    padding-top: 2.5rem;
+}
+.main-title {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 3.375rem;
+    line-height: 1.2;
+    color:yellow;
+}
+.navilateral{
+    border-left:2px solid  black;
+}
+.navilateral li{
+    list-style: none;
+}
+.navilateral li a{
+    color:yellow;
+}
+.breadcrumb{
+    background-color:transparent;
+    padding: 0;
+    margin: 0;
+    color:#182D4F;
+}
+*, html, body, *::before, *::after, a {
+    background-color:#000000;
+    color:yellow;
+}
+ *:focus{
+    outline-style: dashed;
+    outline-color: yellow;
+    outline-width: 2px;
+    outline-offset: 3px;
+}
