@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>Formulario accesible</title>
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -47,6 +47,7 @@
         </header>
         <!-- titulo de la pagina -->
         <section class="titulo-pagina mb-5">
+            <h3 class="sr-only">ruta de donde estamos</h3>
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
@@ -183,7 +184,7 @@
 
                     <fieldset>
                         <legend>Grupo de radio selección</legend>
-                        <p class="text-muted"></em>Siempre se debe haber una opción seleccionada por defecto</p>
+                        <p class="text-muted">Siempre se debe haber una opción seleccionada por defecto</p>
                         <div class="d-block my-3">
                             <div class="custom-control custom-radio">
                                 <input id="radio1" name="radioButtons" type="radio" class="custom-control-input" checked="" required="">
@@ -286,9 +287,9 @@
         <!-- carga de Javascripts -->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js" charset="utf-8"></script>
-    <script src="js/fields_validation.js" charset="utf-8"></script>
-    <script src="js/fonts_change.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fields_validation.js"></script>
+    <script src="js/fonts_change.js"></script>
     <script>
         $('.accebility-bar-contraste').click(function (){
             $('link[href="css/acc.css"]').attr('href','css/contraste.css');
