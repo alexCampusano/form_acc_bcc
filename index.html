@@ -26,7 +26,7 @@
                                 <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5z"/>
                             </svg>
                         </a>
-                        <a href="#" class="clean-link line-height-0 mx-2 accebility-bar-contraste">
+                        <a href="#" class="clean-link line-height-0 mx-2 accebility-bar-contraste amari">
                             <div class="sr-only">Aumentar el contraste</div>
                             <svg class="bi bi-circle-half" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 15V1a7 7 0 1 1 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
@@ -46,7 +46,7 @@
             </div>
         </header>
         <!-- titulo de la pagina -->
-        <section class="titulo-pagina mb-5">
+        <section class="titulo-pagina pb-5">
             <h3 class="sr-only">ruta de donde estamos</h3>
             <div class="container">
                 <div class="row">
@@ -70,7 +70,7 @@
             </div>
         </section>
         <!-- formulario -->
-        <section class="container">
+        <section class="container pb-5">
             <div class="formulario mb-5">
                 <form class="needs-validation" novalidate="">
                     <h2 class="mb-3">Elementos en ancho total</h2>
@@ -97,6 +97,20 @@
                         <label for="tipoPassword">Campo tipo contraseña</label>
                         <input type="password" class="form-control" name="tipoPassword" id="tipoPassword" placeholder="Este es un elemento tipo contraseña">
                         <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                    </div>
+                    <!-- tipo file -->
+                    
+                    <div class="mb-3 ">
+                        <p>subir el archivo</p>
+                        <div class="mb-3 file-class">
+                            <label for="fileupload" id="buttonlabel">
+                                <span role="button" aria-controls="filename" tabindex="0">upload file</span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="filename" class="hide">uploaded file</label>
+                            <input type="text" id="filename" autocomplete="off" readonly placeholder="no file uploaded"> 
+                        </div>
+                        
                     </div>
                     <!-- tipo select -->
                     <div class="mb-3">
@@ -292,11 +306,29 @@
     <script src="js/fonts_change.js"></script>
     <script>
         $('.accebility-bar-contraste').click(function (){
-            $('link[href="css/acc.css"]').attr('href','css/contraste.css');
+            $('body').toggleClass('contraste');
         });
-        $('#original').click(function (){
-            $('link[href="style2.css"]').attr('href','style1.css');
+        
+        // btn file upload 
+        // trigger upload on space & enter
+        // = standard button functionality
+        $('#buttonlabel span[role=button]').bind('keypress keyup', function(e) {
+        if(e.which === 32 || e.which === 13){
+            e.preventDefault();
+            $('#fileupload').click();
+        }    
         });
+
+        // return chosen filename to additional input
+        $('#fileupload').change(function(e) {
+        var filename = $('#fileupload').val().split('\\').pop();
+        $('#filename').val(filename);
+        $('#filename').attr('placeholder', filename);
+        $('#filename').focus();
+        });
+        
     </script>
     </body>
 </html>
+
+

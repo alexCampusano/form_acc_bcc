@@ -4,6 +4,10 @@ html, body{
     font-family: 'Open sans', sans-serif;
     background-color: #F1F1F1;
 }
+.container {
+    padding-right: 0;
+    padding-left: 0;
+}
 /* inputs */
 input[type=text],
 input[type=number],
@@ -77,4 +81,164 @@ ol.breadcrumb li,
 .breadcrumb-item.active,
 ol.breadcrumb li a{
     color:#182D4F;
+}
+
+#fileupload {
+    display: none;
+  }
+  .mb-3.file-class {
+    display: flex;
+}
+  .file-class span[role=button] {
+    display: table-cell;
+    font-family: Arial;
+    font-size: 1rem;
+    padding: 8px 8px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 2px solid #265986;  
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #265986;
+    outline: none;
+  }
+  .file-class span[role=button]:hover,
+  .file-class span[role=button]:focus {
+    box-shadow: 0 0 5px #595959;
+    background-color: #183a57;
+    border-color: #265986;
+    outline: 2px solid transparent;
+  }
+  .file-class .hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+  .file-class input[type=text] {
+    display: table-cell;
+    margin-left: -5px;
+    width: calc(100% - 88px);
+    height: fit-content;
+    font-family: Arial;
+    font-size: 1rem;
+    padding: 8px 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #265986;  
+    color: #000000;
+    background-color: #ffffff;
+  }
+  .file-class input[type=text]:focus {
+    box-shadow: 0 0 5px #595959;
+    border-color: #265986;
+    outline: 2px solid transparent;
+  }
+  
+
+
+
+
+
+/* contraste */
+/* inputs */
+body.contraste input[type=text],
+body.contraste input[type=number],
+body.contraste input[type=email],
+body.contraste input[type=password],
+body.contraste .custom-select,
+body.contraste textarea.form-control{
+    background-color: yellow;
+    border-color:yellow;
+    border-width:2px;
+    color:black;
+    font-size: 16px;
+    font-weight: 700;   
+}
+body.contraste .form-control:focus,
+body.contraste .custom-select:focus,
+body.contraste .custom-control-input:focus{
+    outline-style: dashed;
+    outline-color: yellow;
+    outline-width: 2px;
+    outline-offset: 3px;
+}
+body.contraste a{
+    text-decoration: underline;
+}
+body.contraste textarea{
+    min-height: 100px;
+}
+body.contraste .btn-primary{
+    background-color: yellow;
+    color:black;
+}
+body.contraste button[type=reset]{
+    color:yellow;
+}
+body.contraste ::placeholder{
+    color:black !important;
+    font-weight: normal;
+}
+body.contraste .header-access {
+    background-color: black;
+    padding:2px 0px;
+}
+
+body.contraste .btn.btn-minibox {
+    background-color: black;
+    border-radius: 4px;
+    padding: 0 3px;
+}
+body.contraste .header-main {
+    background-color: black;
+    min-height: 100px;
+}
+
+body.contraste .titulo-pagina{
+    background: black;
+    min-height: 11.25rem;
+    padding-top: 2.5rem;
+}
+body.contraste .main-title {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 3.375rem;
+    line-height: 1.2;
+    color:yellow;
+}
+body.contraste .navilateral{
+    border-left:2px solid  #cccccc;
+}
+body.contraste .navilateral li{
+    list-style: none;
+}
+body.contraste .navilateral li a{
+    color:yellow;
+}
+body.contraste .breadcrumb{
+    background-color:transparent;
+    padding: 0;
+    margin: 0;
+    color:#182D4F;
+}
+body.contraste *, body.contraste , body.contraste *::before, body.contraste *::after, body.contraste a {
+    background-color:#000000;
+    color:yellow;
+}
+body.contraste *:focus{
+    outline-style: dashed;
+    outline-color: yellow;
+    outline-width: 2px;
+    outline-offset: 3px;
+}
+
+body.contraste .file-class span[role=button]{
+    background-color:#000000;
+    color:yellow;
+    border-color: yellow;
 }
