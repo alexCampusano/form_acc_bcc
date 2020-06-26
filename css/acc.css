@@ -243,3 +243,10 @@ body.contraste .file-class span[role=button]{
     color:yellow;
     border-color: yellow;
 }
+
+@media (max-width:426px){
+    .container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
