@@ -15,6 +15,7 @@ input[type=text],
 input[type=number],
 input[type=email],
 input[type=password],
+input[type=file],
 .custom-select,
 textarea.form-control{
     border-color:#182D4F;
@@ -84,68 +85,14 @@ ol.breadcrumb li,
 ol.breadcrumb li a{
     color:#182D4F;
 }
-
-#fileupload {
-    display: none;
-  }
-  .mb-3.file-class {
-    display: flex;
-    padding: 20px 20px 13px;
-    border: 3px dashed #192d4e;
+.file-input {
+    padding: 2px;
+}
+.file2 {
+    padding: 12px;
+    border: 2px dotted #182d4f;
     border-radius: 4px;
 }
-  .file-class span[role=button] {
-    display: table-cell;
-    font-family: Arial;
-    font-size: 1rem;
-    padding: 8px 8px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border: 2px solid #265986;  
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #265986;
-    outline: none;
-    width: 150px;
-  }
-  .file-class span[role=button]:hover,
-  .file-class span[role=button]:focus {
-    box-shadow: 0 0 5px #595959;
-    background-color: #183a57;
-    border-color: #265986;
-    outline: 2px solid transparent;
-  }
-  .file-class .hide {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
-  }
-  .file-class input[type=text] {
-    display: table-cell;
-    margin-left: -5px;
-    width: calc(100% - 100px);
-    height: fit-content;
-    font-family: Arial;
-    font-size: 1rem;
-    padding: 8px 8px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border: 2px solid #265986;  
-    color: #000000;
-    background-color: #ffffff;
-  }
-  .file-class input[type=text]:focus {
-    box-shadow: 0 0 5px #595959;
-    border-color: #265986;
-    outline: 2px solid transparent;
-  }
-  
-
   footer {
     background-color: #0f1d34;
     font-size: 1em;

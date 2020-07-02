@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/acc.css">
     </head>
     <body>
-        <header>
+        <header id="header_page">
             <div class="header-access">
                 <div class="container">
                     <div class="text-right">
@@ -76,7 +76,13 @@
                     <h2 class="mb-3">Elementos en ancho total</h2>
                     <!-- tipo texto -->
                     <div class="mb-3">
-                        <label for="tipoTexto">Campo tipo Texto</label>
+                        <label for="tipoTexto" class="tooltip_wrp" data-toggle="tooltip" data-placement="top" title="Escribir ayuda sobre este campo" >Campo tipo Texto 
+
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                <div class="sr-only">Escribir ayuda sobre este campo</div>
+                        </label>
                         <input type="text" class="form-control" name="tipoTexto" id="tipoTexto" placeholder="Este es un elemento tipo texto">
                         <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                     </div>
@@ -95,22 +101,22 @@
                     <!-- tipo password -->
                     <div class="mb-3">
                         <label for="tipoPassword">Campo tipo contraseña</label>
-                        <input type="password" class="form-control" name="tipoPassword" id="tipoPassword" placeholder="Este es un elemento tipo contraseña">
+                        <input type="password" class="form-control" name="tipoPassword" id="tipoPassword" placeholder="Este es un elemento tipo contraseña" required>
                         <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                     </div>
                     <!-- tipo file -->
-                    
-                    <div class="mb-3 ">
-                        <p>subir el archivo</p>
-                        <div class="mb-3 file-class ">
-                            <label for="fileupload" id="buttonlabel">
-                                <span role="button" aria-controls="filename" tabindex="0">Subir archivo</span>
-                            </label>
-                            <input type="file" id="fileupload">
-                            <label for="filename" class="hide">Archvivo subido</label>
-                            <input type="text" id="filename" autocomplete="off" readonly placeholder="No hay archvivo subido"> 
+                    <div class="mb-3">
+                        <label for="tipoFile">Campo tipo file</label>
+                        <input type="file" class="file-input form-control" id="tipoFile" required>
+                        <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
+                    </div>
+                    <!-- tipo file 2 -->
+                    <div class="mb-3">
+                        <label for="tipoFile2">Campo tipo file</label>
+                        <div class="file2">
+                            <input type="file" class="file-input form-control" id="tipoFile2" required>
                         </div>
-                        
+                        <div class="invalid-feedback">Por favor ingrese datos válidos.</div>
                     </div>
                     <!-- tipo select -->
                     <div class="mb-3">
@@ -291,7 +297,7 @@
 
                     <hr class="mb-5 mt-5">
 
-                    <button class="btn btn-primary btn-lg" type="submit">Botón Enviar</button>
+                    <button class="btn btn-primary btn-lg" type="submit" >Botón Enviar</button>
                     <button type="reset" class="btn btn-link text-muted">Borrar el formulario</button>
                   </form>
             </div>
@@ -392,7 +398,7 @@
                                  </ul>
                               </div>
                            </div>
-                     <a class="d-none d-md-block back-top" href="javascript:" id="return-to-top" data-senna-off="true"><i class="scrolTop-icon la la-chevron-circle-up"></i> </a> 
+                     <a class="d-none d-md-block back-top" href="#header_page" id="return-to-top" data-senna-off="true"><i class="scrolTop-icon la la-chevron-circle-up"></i><span class="sr-only">subir al top de la página</span></a> 
                      <div class="mb-4 mt-8">
                         <a class="footer-logo" href="#" target="" data-senna-off="true"><img alt="Banco Central de Chile" class="visible-desk" disablewebedit="True" src="img/logoFooter.png"> </a> 
                         <p class="footer-direction sr-only">Agustinas 1180, Santiago, Chile.</p>
@@ -404,14 +410,17 @@
 
         <!-- carga de Javascripts -->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/fields_validation.js"></script>
     <script src="js/fonts_change.js"></script>
     <script>
         $('.accebility-bar-contraste').click(function (){
             $('body').toggleClass('contraste');
         });
+        
         
         // btn file upload 
         // trigger upload on space & enter
@@ -424,11 +433,15 @@
         });
 
         // return chosen filename to additional input
-        $('#fileupload').change(function(e) {
-        var filename = $('#fileupload').val().split('\\').pop();
-        $('#filename').val(filename);
-        $('#filename').attr('placeholder', filename);
-        $('#filename').focus();
+        // $('#fileupload').change(function(e) {
+        //     var filename = $('#fileupload').val().split('\\').pop();
+        //     $('#filename').val(filename);
+        //     $('#filename').attr('placeholder', filename);
+        //     $('#filename').focus();
+        // });
+
+        $(document).ready(function(){
+            $('.tooltip_wrp').tooltip();
         });
         
     </script>
