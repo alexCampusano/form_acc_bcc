@@ -203,19 +203,26 @@ footer .footer-links .footer-item .footer-link.iconoExterno i{
     transition: all .3s ease;
 }
 
-
-/* contraste */
+/*
+__^__                                      __^__
+( ___ )------------------------------------( ___ )
+ | / |                                      | \ |
+ | / |               Contraste              | \ |
+ |___|                                      |___|
+(_____)------------------------------------(_____) 
+*/
 /* inputs */
 body.contraste input[type=text],
 body.contraste input[type=number],
 body.contraste input[type=email],
 body.contraste input[type=password],
+body.contraste input[type=file],
 body.contraste .custom-select,
 body.contraste textarea.form-control{
-    background-color: yellow;
-    border-color:yellow;
+    background-color: yellow !important;
+    border-color:yellow !important;
     border-width:2px;
-    color:black;
+    color:black !important;
     font-size: 16px;
     font-weight: 700;   
 }
@@ -302,7 +309,14 @@ body.contraste .file-class span[role=button]{
     color:yellow;
     border-color: yellow;
 }
-
+body.contraste .file2 {
+    padding: 12px;
+    border: 2px dotted yellow;
+    border-radius: 4px;
+}
+body.contraste .alert{
+    border-color:yellow;
+}
 @media (max-width:426px){
     .container {
         padding-right: 10px;
